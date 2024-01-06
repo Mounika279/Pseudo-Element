@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+       p::after{
+        content: Autumn season before in Llanrwst, North Wales;
+        content: url(./autumn\ after.jpg);
+        background-size: cover;
+       }
+       p::before{
+        content: url(./autumn\ before.jpg);
+        background-size: cover;
+       }
+       p {
+            position: relative;
+            text-align: center;
+            font-size: x-large;
+            color: green; 
+       }
+        b::before{
+        content: url(./bike\ before.jpg);
+        background-size: cover;
+        position: relative;
+        left:-80vh;
+       }
+       b::after{
+        content: y bike before and after That back end was horrific!;
+        content: url(./bike\ after.jpg);
+        background-size: cover;
+
+        position: relative;
+        left:50vh;
+        top:-35vh;
+       }
+       .bike {
+            position: relative;
+            text-align: center;
+            font-size: large;
+            width: 200px; 
+            color: olive;
+            margin: auto;
+        }
+        p::first-letter{
+            color: yellow;
+            font-size: xx-large;
+        }
+        .smile{
+            display: inline-block;
+            height: 150px;
+            width:150px;
+        }
+   .smile{
+    background-image: url(./happy.png);
+   background-size: cover;
+   }
+  
+   #id1:hover{
+    background-image: url(./sad.png);
+    background-size: cover;
+   }
+   #id2:hover{
+    background-image: url(./emoticon.png);
+    background-size: cover;
+   } 
+   #id3:hover{
+    background-image: url(./star.png);
+    background-size: cover;
+   }  
+    #id4:hover{
+    background-image: url(./smile.png);
+    background-size: cover;
+   }  
+   #id5:hover{
+    background-image: url(./confused.png);
+    background-size: cover;
+   }
+   h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkmagenta;
+   }
+   .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkcyan;
+   } 
+    </style>
+</head>
+<body>
+    <h1>Using before and after(Pseudo Elements)</h1>
+    <div class="pseudo-element">
+        <div class="season"><p>Autumn season before & after in Llanrwst, North Wales</p></div>
+        <div class="bike"><b> My bike before and after. </b></div>
+        <h2>Using hover</h2>
+        <div class="main">         
+            <div id="id1" class="smile"></div>
+            <div id="id2" class="smile"></div>
+            <div id="id3" class="smile"></div>
+            <div id="id4" class="smile"></div>
+            <div id="id5" class="smile"></div>            
+          </div>      
+    </div>
+</body>
+</html>
